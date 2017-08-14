@@ -19,6 +19,7 @@ public class AdminController {
 	@RequestMapping(value="/addadmin")
 	public String toIndex(HttpServletResponse response, HttpServletRequest request, Model model) {
 		model.addAttribute("userInfo", userService.show());
+		System.out.println("22222222222");
 		return "showInfo";
 	}
 
